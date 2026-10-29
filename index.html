@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dongsung Huh | Learning, Structure, and Computation</title>
+    <meta name="description" content="Dongsung Huh studies the mathematical foundations of deep learning, algebraic structure discovery, and systematic generalization. Visiting Scientist at Centaur AI Institute and Affiliate at NSF IAIFI.">
+    <meta name="theme-color" content="#174c76">
+    <meta property="og:title" content="Dongsung Huh | Learning, Structure, and Computation">
+    <meta property="og:description" content="Mathematical foundations of deep learning, algebraic structure discovery, and systematic generalization.">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:wght@400;500;600&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header shell">
+        <a class="wordmark" href="#main" aria-label="Dongsung Huh, home">DH<span>.</span></a>
+        <nav aria-label="Main navigation">
+            <a href="#research">Research</a>
+            <a href="#publications">Publications</a>
+            <a href="#talks">Talks</a>
+            <a href="#about">About</a>
+            <a class="nav-cv" href="assets/dongsung-huh-cv.pdf">CV <span aria-hidden="true">&nearr;</span></a>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section class="intro shell" aria-labelledby="name">
+            <div class="identity">
+                <div>
+                    <p class="eyebrow">Learning &middot; Structure &middot; Computation</p>
+                    <h1 id="name">Dongsung Huh</h1>
+                    <p class="affiliations">Visiting Scientist, Centaur AI Institute<br>Affiliate, NSF IAIFI</p>
+                </div>
+                <img class="portrait" src="assets/portrait.jpg" alt="Dongsung Huh" width="160" height="160" fetchpriority="high">
+            </div>
+            <p class="research-question">How can learning systems discover<br class="desktop-break"> <em>reusable rules?</em></p>
+            <p class="intro-copy">I study how learning objectives and neural dynamics shape algebraic structure discovery and systematic generalization. My work connects deep learning, physics, and computational neuroscience.</p>
+            <div class="contact-links" aria-label="Contact and profiles">
+                <a href="assets/dongsung-huh-cv.pdf">Curriculum vitae <span aria-hidden="true">&nearr;</span></a>
+                <a href="mailto:huh@salk.edu">huh@salk.edu</a>
+                <a href="https://scholar.google.com/citations?user=2dwi3gMAAAAJ">Google Scholar <span aria-hidden="true">&nearr;</span></a>
+                <a href="https://www.linkedin.com/in/dongsunghuh/">LinkedIn <span aria-hidden="true">&nearr;</span></a>
+            </div>
+        </section>
+
+        <section id="research" class="research-band" aria-labelledby="research-title">
+            <div class="shell">
+                <div class="section-heading">
+                    <h2 id="research-title">Research</h2>
+                    <span class="section-note">From continuous learning to discrete structure</span>
+                </div>
+                <article class="research-feature">
+                    <div class="research-text">
+                        <p class="eyebrow">Algebraic structure discovery</p>
+                        <h3>Learning the rule,<br>not just the examples.</h3>
+                        <p>Algebraic rules describe how operations compose. Can neural representations recover those rules from observations, rather than memorize a table?</p>
+                        <p>My work studies group discovery through unitary representations and differentiable measures of algebraic complexity. A broader question drives my research: when do learning objectives favor computational rules that generalize beyond the observed examples?</p>
+                        <a class="text-link" href="#paper-associativity">Recent work <span aria-hidden="true">&rarr;</span></a>
+                    </div>
+                    <figure class="algebra-figure">
+                        <div class="table-label">A composition table</div>
+                        <table class="group-table" aria-label="Multiplication table of the cyclic group of order four">
+                            <thead><tr><th scope="col">&middot;</th><th scope="col">e</th><th scope="col">r</th><th scope="col">r<sup>2</sup></th><th scope="col">r<sup>3</sup></th></tr></thead>
+                            <tbody>
+                                <tr><th scope="row">e</th><td class="g0">e</td><td class="g1">r</td><td class="g2">r<sup>2</sup></td><td class="g3">r<sup>3</sup></td></tr>
+                                <tr><th scope="row">r</th><td class="g1">r</td><td class="g2">r<sup>2</sup></td><td class="g3">r<sup>3</sup></td><td class="g0">e</td></tr>
+                                <tr><th scope="row">r<sup>2</sup></th><td class="g2">r<sup>2</sup></td><td class="g3">r<sup>3</sup></td><td class="g0">e</td><td class="g1">r</td></tr>
+                                <tr><th scope="row">r<sup>3</sup></th><td class="g3">r<sup>3</sup></td><td class="g0">e</td><td class="g1">r</td><td class="g2">r<sup>2</sup></td></tr>
+                            </tbody>
+                        </table>
+                        <div class="algebra-rule">One reusable rule: <span>r<sup>4</sup> = e</span></div>
+                        <figcaption>Illustration: the cyclic group C<sub>4</sub>. A compact algebraic rule determines every entry.</figcaption>
+                    </figure>
+                </article>
+                <div class="research-pair">
+                    <article>
+                        <p class="eyebrow">Learning dynamics</p>
+                        <h3>The geometry of learning</h3>
+                        <p>How does parameter geometry shape optimization? I study learning dynamics, curvature corrections, and the sensitivity of neural predictions.</p>
+                        <a class="text-link" href="#paper-curvature">Curvature-corrected dynamics <span aria-hidden="true">&rarr;</span></a>
+                    </article>
+                    <article>
+                        <p class="eyebrow">Neuroscience &amp; control</p>
+                        <h3>Computation in dynamical systems</h3>
+                        <p>My neuroscience work investigates training spiking networks and the mathematical principles underlying movement, memory, and neural computation.</p>
+                        <a class="text-link" href="#paper-spiking">Spiking neural networks <span aria-hidden="true">&rarr;</span></a>
+                    </article>
+                </div>
+                <p class="research-outlook"><strong>Looking ahead.</strong> I aim to understand when learned computational rules can be identified from finite evidence, discovered by practical training procedures, and composed reliably under finite precision and noise.</p>
+            </div>
+        </section>
+
+        <section id="publications" class="publications shell" aria-labelledby="publications-title">
+            <div class="section-heading">
+                <h2 id="publications-title">Selected work</h2>
+                <a class="text-link" href="https://scholar.google.com/citations?user=2dwi3gMAAAAJ">All publications <span aria-hidden="true">&nearr;</span></a>
+            </div>
+            <ol class="paper-list">
+                <li class="paper" id="paper-associativity">
+                    <div class="paper-meta"><span class="paper-year">2026</span><span class="paper-status">Manuscript</span></div>
+                    <div>
+                        <h3><a href="https://openreview.net/forum?id=aovKMgbn92">Associativity as Occam's Razor: Differentiable Measure of Algebraic Complexity</a></h3>
+                        <p class="authors"><strong>D. Huh</strong>, L. Horesh, H. Jeong</p>
+                        <p class="venue">Submitted to ICLR 2027</p>
+                        <p class="paper-summary">A differentiable approach to algebraic complexity and group structure discovery.</p>
+                        <div class="paper-links"><a href="https://openreview.net/forum?id=aovKMgbn92">Manuscript</a><a href="https://arxiv.org/abs/2511.23152">Earlier preprint</a></div>
+                    </div>
+                </li>
+                <li class="paper">
+                    <div class="paper-meta"><span class="paper-year">2026</span><span class="paper-status">Manuscript</span></div>
+                    <div>
+                        <h3><a href="https://openreview.net/forum?id=WdwZwQhfcd">Exact Group Recovery from Subquadratic Observations</a></h3>
+                        <p class="authors"><strong>D. Huh</strong>, H. Jeong</p>
+                        <p class="venue">Submitted to ICLR 2027</p>
+                        <div class="paper-links"><a href="https://openreview.net/forum?id=WdwZwQhfcd">Manuscript</a></div>
+                    </div>
+                </li>
+                <li class="paper">
+                    <div class="paper-meta"><span class="paper-year">2026</span><span class="paper-status accepted">Accepted</span></div>
+                    <div>
+                        <h3>Interpretable attribution of decision-relevant uncertainty in AI</h3>
+                        <p class="authors">R. Nartallo-Kaluarachchi, R. Manson-Sawko, S. Ubaru, <strong>D. Huh</strong>, M. J. Zimo&#324;, L. Horesh, Y. Bengio</p>
+                        <p class="venue">Nature Machine Intelligence &middot; Accepted</p>
+                    </div>
+                </li>
+                <li class="paper">
+                    <div class="paper-meta"><span class="paper-year">2025</span><span class="paper-status published">ICLR</span></div>
+                    <div>
+                        <h3><a href="https://openreview.net/forum?id=Tz8Li6G2xU">Discovering Group Structures via Unitary Representation Learning</a></h3>
+                        <p class="authors"><strong>D. Huh</strong></p>
+                        <p class="paper-summary">Unitary representation learning as a route to discovering group structure.</p>
+                        <div class="paper-links"><a href="https://openreview.net/forum?id=Tz8Li6G2xU">Paper</a><a href="https://openreview.net/pdf?id=Tz8Li6G2xU">PDF</a></div>
+                    </div>
+                </li>
+                <li class="paper">
+                    <div class="paper-meta"><span class="paper-year">2022</span><span class="paper-status published">NeurIPS</span></div>
+                    <div>
+                        <h3><a href="https://doi.org/10.52202/068431-1673">The Missing Invariance Principle Found: The Reciprocal Twin of Invariant Risk Minimization</a></h3>
+                        <p class="authors"><strong>D. Huh</strong>, A. Baidya</p>
+                        <div class="paper-links"><a href="https://doi.org/10.52202/068431-1673">Paper</a></div>
+                    </div>
+                </li>
+                <li class="paper" id="paper-curvature">
+                    <div class="paper-meta"><span class="paper-year">2020</span><span class="paper-status published">ICML</span></div>
+                    <div>
+                        <h3><a href="https://proceedings.mlr.press/v119/huh20a.html">Curvature-Corrected Learning Dynamics in Deep Neural Networks</a></h3>
+                        <p class="authors"><strong>D. Huh</strong></p>
+                        <p class="paper-summary">The role of curvature in the dynamics of neural network training.</p>
+                        <div class="paper-links"><a href="https://proceedings.mlr.press/v119/huh20a.html">Paper</a><a href="https://proceedings.mlr.press/v119/huh20a/huh20a.pdf">PDF</a></div>
+                    </div>
+                </li>
+                <li class="paper" id="paper-spiking">
+                    <div class="paper-meta"><span class="paper-year">2018</span><span class="paper-status published">NeurIPS</span></div>
+                    <div>
+                        <h3><a href="https://proceedings.neurips.cc/paper_files/paper/2018/hash/185e65bc40581880c4f2c82958de8cfe-Abstract.html">Gradient Descent for Spiking Neural Networks</a></h3>
+                        <p class="authors"><strong>D. Huh</strong>, T. J. Sejnowski</p>
+                        <p class="paper-summary">Gradient-based training for continuous-time spiking neural networks.</p>
+                        <div class="paper-links"><a href="https://proceedings.neurips.cc/paper_files/paper/2018/hash/185e65bc40581880c4f2c82958de8cfe-Abstract.html">Paper</a></div>
+                    </div>
+                </li>
+                <li class="paper">
+                    <div class="paper-meta"><span class="paper-year">2016</span><span class="paper-status published">PNAS</span></div>
+                    <div>
+                        <h3><a href="https://doi.org/10.1073/pnas.1608724113">Conservation Law for Self-Paced Movements</a></h3>
+                        <p class="authors"><strong>D. Huh</strong>, T. J. Sejnowski</p>
+                        <div class="paper-links"><a href="https://doi.org/10.1073/pnas.1608724113">Paper</a></div>
+                    </div>
+                </li>
+            </ol>
+            <p class="publication-footer">Complete publication record in my <a href="assets/dongsung-huh-cv.pdf">CV</a> and on <a href="https://scholar.google.com/citations?user=2dwi3gMAAAAJ">Google Scholar</a>.</p>
+        </section>
+
+        <section id="talks" class="talks-band" aria-labelledby="talks-title">
+            <div class="shell">
+                <div class="section-heading"><h2 id="talks-title">Selected talks</h2><span class="section-note">2026</span></div>
+                <ul class="talk-list">
+                    <li><time datetime="2026-08">Aug 2026</time><div><h3>Neuro-Symbolic AI Summer School</h3><p class="talk-host">Centaur AI Institute &middot; Invited speaker</p><p>Beyond Smooth Interpolation: Differentiable Discovery of Algebraic Structures</p></div></li>
+                    <li><time datetime="2026-07">Jul 2026</time><div><h3>Google DeepMind</h3><p class="talk-host">Universal AI Group &middot; London</p><p>Beyond Smooth Interpolation: Differentiable Discovery of Algebraic Structures</p></div></li>
+                    <li><time datetime="2026-06">Jun 2026</time><div><h3>MIT</h3><p class="talk-host">Physics of Living Systems and Non-Equilibrium Systems</p><p>Beyond Smooth Interpolation: Differentiable Discovery of Algebraic Structures</p></div></li>
+                    <li><time datetime="2026-05">May 2026</time><div><h3>Flatiron Institute</h3><p class="talk-host">Center for Computational Mathematics &middot; New York</p><p>Differentiable Algorithmic Compression: Provably Exact Discovery of Group Structures</p></div></li>
+                    <li><time datetime="2026-02">Feb 2026</time><div><h3>UC Berkeley</h3><p class="talk-host">Redwood Center for Theoretical Neuroscience</p><p>Beyond Interpolation: Automated Discovery of Symmetry Groups via Tensor Factorization</p><a class="text-link" href="https://events.berkeley.edu/HWNI/event/315762-redwood-seminar-beyond-interpolation-automated">Event <span aria-hidden="true">&nearr;</span></a></div></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="about" class="about shell" aria-labelledby="about-title">
+            <div class="section-heading"><h2 id="about-title">Background &amp; mentoring</h2><span class="section-note">Physics, learning, and neural computation</span></div>
+            <div class="about-grid">
+                <div>
+                    <h3>A path through physics and neuroscience</h3>
+                    <p>I am a Visiting Scientist at Centaur AI Institute and an Affiliate at the NSF Institute for Artificial Intelligence and Fundamental Interactions (IAIFI). Previously, I was a Senior Research Scientist at IBM Research (2025&ndash;2026) and a Research Staff Member at the MIT-IBM Watson AI Lab (2018&ndash;2025).</p>
+                    <p>I held research positions at the Qualcomm Institute, the Salk Institute with Terrence Sejnowski, and the Gatsby Computational Neuroscience Unit at UCL with Peter Dayan and Peter Latham.</p>
+                    <p>I received my Ph.D. in Physics and M.S. in Neuroscience from UC San Diego, and bachelor's degrees in Physics and Brain and Cognitive Sciences from MIT.</p>
+                    <a class="text-link" href="assets/dongsung-huh-cv.pdf">Full curriculum vitae <span aria-hidden="true">&nearr;</span></a>
+                </div>
+                <div>
+                    <h3>Research mentoring</h3>
+                    <p>At IBM Research, I mentored five doctoral researchers during summer internships, helping define research questions and guiding analyses: Joel Dapello (MIT), Avinash Baidya (UC Davis), Ramon Nartallo-Kaluarachchi (Oxford), Fan Tian (Tufts), and Paulina Hoyos (UT Austin).</p>
+                    <h3 class="collaboration-title">Funded collaborations</h3>
+                    <p>Co-PI on <em>Safe AI Approaches and Program Synthesis</em> with Armando Solar-Lezama (MIT), and <em>Discovering Algebraic Structures towards Automatic Symmetry-aware AI Models</em> with Halyun Jeong (SUNY Albany).</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer shell">
+        <p>Dongsung Huh <span aria-hidden="true">&middot;</span> Cambridge, MA</p>
+        <a href="mailto:huh@salk.edu">huh@salk.edu</a>
+        <a href="#main">Back to top <span aria-hidden="true">&uarr;</span></a>
+    </footer>
+</body>
+</html>
